@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="head_container">
+        <a href="#" class="logo_area">
+            <img src="Images/todo.png" alt="logo" class="logo_icon">
+            <span class="logo_text">To-Do List</span>
+        </a>
+        <div class="nav">
+            <a href="#home" class="nav_link">Home</a>
+            <a href="#features" class="nav_link">Features</a>
+            <a href="#list" class="nav_link">List</a>
+            <a href="#feedback" class="nav_link">Feedback</a>
+            <a href="#about" class="nav_link">About</a>
+        </div>
+        <a href="#contact" class="contact_button">
+            Contact Us
+        </a>
+        <button class="menu_button" type="button">
+            <img src="Images/menubar.png" alt="menu_button" class="menu_icon">
+        </button>
+    </header>
+    <div class="intro">
+        <div class="intro_left">
+            <h1 class="intro_top">
+                Organize your work <br /> and life,finally.
+            </h1>
+            <p class="intro_mid">
+                Simplify life for both you and your team. The world's #1 task manager and to-do list app.
+            </p>
+            <button class="intro_button">
+                Start for Free
+            </button>
+        </div>
+        <div class="intro_right">
+            <img src="Images/todo-2.jpg" alt="Images" class="intro_image">
+        </div>
+    </div>
+    <section>
+        <div class="container" id="list">
+            <h1><b> To-Do List</b></h1>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required>
+                <input type="date" id="task-deadline" required>
+                <select id="task-priority" required>
+                    <option value="" disabled selected>Priority</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <select id="task-category" required>
+                    <option value="" disabled selected>Category</option>
+                    <option value="development">Development</option>
+                    <option value="design">Design</option>
+                    <option value="testing">Testing</option>
+                    <option value="deployment">Deployment</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" id="task-label" placeholder="Labels (comma-separated)">
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+    </section>
+    <hr class="hr_line">
+
+    <div class="footer_container">
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="comp_logo">
+                    <a href="#" class="logo_link">
+                        <img src="Images/todo.png" alt="Icon" class="logo_image">
+                        To-Do List
+                    </a>
+                </div>
+                <p class="filler_text">
+                  Schedule Task Schedule Future.
+                </p>
+                <div class="social">
+                    <a class="social_link" href="#">
+                        <img src="Images/linkedin.png" alt="Images" class="social_icons">
+                    </a>
+                    <a class="social_link" href="#">
+                        <img src="Images/google.jpg" alt="Images" class="social_icons">
+                    </a>
+                    <a class="social_link" href="#">
+                        <img src="Images/youtube.png" alt="Images" class="social_icons">
+                    </a>
+                    <a class="social_link" href="#">
+                        <img src="Images/handshake.png" alt="Images" class="social_icons">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_grid">
+                <div class="footer_grid_column">
+                    <div class="footer_grid_heading">
+                        Products
+                    </div>
+                    <ul class="footer_links_list">
+                        <li>
+                            <a href="#overview" class="footer_link">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Solution</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Customers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_grid_column">
+                    <div class="footer_grid_heading">
+                        Company
+                    </div>
+                    <ul class="footer_links_list">
+                        <li>
+                            <a href="#overview" class="footer_link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Investor Relations</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Press</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_grid_column">
+                    <div class="footer_grid_heading">
+                        Support
+                    </div>
+                    <ul class="footer_links_list">
+                        <li>
+                            <a href="#overview" class="footer_link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Chat</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_grid_column">
+                    <div class="footer_grid_heading">
+                        Legal
+                    </div>
+                    <ul class="footer_links_list">
+                        <li>
+                            <a href="#overview" class="footer_link">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer_link">Latest Updates</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer_copyright">
+            © 2022 - Present To-Do List. All rights reserved.
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
